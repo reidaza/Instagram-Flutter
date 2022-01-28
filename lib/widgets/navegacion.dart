@@ -12,7 +12,9 @@ class navegacion extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const Icon(Icons.house_rounded),
+          MaterialButton(onPressed: ()=> Navigator.pop(context),
+          child: const Icon(Icons.house_rounded),
+          ),
           const Icon(Icons.search_outlined),
           const Icon(Icons.slow_motion_video_outlined),
           const Icon(Icons.shopping_bag_outlined),                

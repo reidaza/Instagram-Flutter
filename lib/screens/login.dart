@@ -14,7 +14,6 @@ class LoginScreen extends StatelessWidget {
             children: [
               //Logo Instagram
               Container(
-                color: Colors.red,
                 height: 150,
                 width: 200,
                 child: Column(
@@ -66,7 +65,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 20,),
               //Boton Login
               MaterialButton(
-                onPressed: (){},
+                onPressed: () =>Navigator.of(context).pushNamed('Content'),
                 color: Colors.lightBlue,
                 minWidth: 300.0,
                 child: Text('Log in'),
@@ -74,11 +73,14 @@ class LoginScreen extends StatelessWidget {
               //Expanded
               Expanded(child: Container()),
               //Texto Sing In
-              Container(
-                child: Column(
-                  children: [
-                    Text('Don´t have an account?Sing up.')
-                  ],
+              Padding(
+                padding: const EdgeInsets.only(bottom: 15),
+                child: Container(
+                  child: Column(
+                    children: [
+                      Text('Dont have an account?Sing up.')
+                    ],
+                  ),
                 ),
               ),
             ],

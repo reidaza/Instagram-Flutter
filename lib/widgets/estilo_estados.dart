@@ -83,8 +83,8 @@ class _FondoDegradado extends StatelessWidget {
       decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(200),
       gradient: LinearGradient(colors: [
-        Colors.yellow,
-        Colors.purple,
+        Colors.amber.shade700,
+        Colors.red.shade700,
       ])
       )
     );

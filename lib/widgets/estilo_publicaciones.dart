@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Publicaciones extends StatelessWidget {
-  Publicaciones({Key? key}) : super(key: key);
+  const Publicaciones({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        EstiloPublicaciones(imagenavatar: 'assets/niño.png', nickname: 'janfry_of', post: 'paisaje.jpg'),
+        EstiloPublicaciones(imagenavatar: 'assets/pipe.jpg', nickname: 'soyChortis_', post: 'lobo.jpg'),
+        // EstiloPublicaciones(imagenavatar: 'assets/niño.png', nickname: 'janfry_of', post: 'paisaje.jpg'),
       ],
     );
   }
@@ -23,7 +24,7 @@ class EstiloPublicaciones extends StatelessWidget {
   final String nickname;
   final String post;
 
-  const EstiloPublicaciones({
+  EstiloPublicaciones({
     Key? key,
     required this.imagenavatar,
     required this.nickname,
@@ -32,10 +33,11 @@ class EstiloPublicaciones extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var estiloTexto = TextStyle(fontWeight: FontWeight.bold);
     return Column(
       children: [
         SizedBox(height: 15,),                
-        //Avatar
+        //
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: Row(
@@ -80,10 +82,19 @@ class EstiloPublicaciones extends StatelessWidget {
           ),
         ),
         SizedBox(height: 5,),
-        Column(
-          children: [
-            Text('hola mundo')
-          ],
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text('1.255 Me gusta', style: estiloTexto,),
+              SizedBox(height: 5,),
+              Text('$nickname  Officia do duis magna deserunt occaecat nostrud sint consectetur pariatur magna eu anim deserunt sint. Laboris quis cillum laboris irure do ex ad voluptate ullamco minim tempor esse. Exercitation do veniam aliqua Lorem ad sint sunt non in sint. Magna veniam sunt reprehenderit et quis.',),
+              SizedBox(height: 5,),
+              Text('Ver los 56 comentarios'),
+              SizedBox(height: 5,),
+            ],
+          ),
         ),
       ],
     );

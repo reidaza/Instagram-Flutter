@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      initialRoute: 'Content',
+      initialRoute: 'Login',
       routes: <String, WidgetBuilder>{
         'Login': (BuildContext context) => LoginScreen(),
         'Content': (BuildContext context) => ContentScreen(),
