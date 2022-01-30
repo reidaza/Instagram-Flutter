@@ -18,7 +18,7 @@ final colorIcon = Colors.white;
             TopbarWidget(),
             //Scroll Estados
             const Estados(),
-            Publicaciones(),
+            const Publicaciones(),
             Expanded(child: Container()),
             const navegacion()
           ],

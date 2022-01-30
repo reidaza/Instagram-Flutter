@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'Login',
       routes: <String, WidgetBuilder>{
         'Login': (BuildContext context) => LoginScreen(),
-        'Content': (BuildContext context) => ContentScreen(),
+        'Content': (BuildContext context) => const ContentScreen(),
       }
       
     );
