@@ -18,8 +18,19 @@ final colorIcon = Colors.white;
             TopbarWidget(),
             //Scroll Estados
             const Estados(),
-            const Publicaciones(),
-            Expanded(child: Container()),
+            Expanded(
+              child: SizedBox(
+                height: 150,
+                child: ListView.builder(
+                  itemCount: 15,
+                  itemBuilder: (BuildContext context, int index){
+                    return Publicaciones();
+                  },
+                  ),
+              ),
+              ),
+            // const Publicaciones(),
+            // Expanded(child: Container()),
             const navegacion()
           ],
         ),

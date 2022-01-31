@@ -7,8 +7,10 @@ class Publicaciones extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        EstiloPublicaciones(imagenavatar: 'assets/pipe.jpg', nickname: 'soyChortis_', post: 'lobo.jpg'),
-        // EstiloPublicaciones(imagenavatar: 'assets/niño.png', nickname: 'janfry_of', post: 'paisaje.jpg'),
+        EstiloPublicaciones(imagenavatar: 'assets/pipe.jpg', nickname: 'fatboy-8', post: 'carro.jpg'),
+        EstiloPublicaciones(imagenavatar: 'assets/lucho.jpg', nickname: 'soyChortis_', post: 'lucho.jpg'),
+        EstiloPublicaciones(imagenavatar: 'assets/carro.jpg', nickname: 'mancos123', post: 'pipe.jpg'),
+        EstiloPublicaciones(imagenavatar: 'assets/niño.png', nickname: 'janfry_of', post: 'paisaje.jpg'),
       ],
     );
   }
